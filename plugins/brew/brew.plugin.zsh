@@ -46,6 +46,7 @@ fi
 
 alias ba='brew autoremove'
 alias bcfg='brew config'
+alias brinfo="brew info"
 alias bci='brew info --cask'
 alias bcin='brew install --cask'
 alias bcl='brew list --cask'
@@ -80,6 +81,7 @@ alias bubug='bubo && bugbc'
 alias bugbc='brew upgrade --greedy && brew cleanup'
 alias bup='brew upgrade'
 alias buz='brew uninstall --zap'
+alias bt="brew tap"
 
 function brews() {
   local formulae="$(brew leaves | xargs brew deps --installed --for-each)"
